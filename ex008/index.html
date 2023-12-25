@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatações</title>
+    <style>
+        mark{background-color: rgb(29, 166, 190);}
+        /* essa forma aqui é no geral, se eu quero que em todo o texto que aparece o "mark" ele fique de uma cor selecionada, eu faço isso */
+    </style>
+</head>
+<body>
+    <h1>Príncipais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <h5><mark>("Strong" forte,"i" italic )</mark></h5>
+    <p>Nessa frase temos um <b>termo em negrito (forma não semântica).</b></p>
+    <p><strong>Usando o termo STRONG</strong> (forma semântica).</p>
+    <p>Nessa frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+    <p>Nessa frase, <em>temos um termo em itálico </em>usando a tag EM (Semântica).
+    </p>
+
+    <h1>Address</h1>
+    <h5><mark>(Significa endereço)</mark></h5>
+    <P> <address>Rua Teodoro Rogriguês</address>acho que foi essa tag que me fez entender mais sobre " as tags do HTML5 tem hoje um sentido, antes elas eram mais apenas pela forma", essa tag tem um nome "address" pelo fato que quando eu for colocar um enderesço eu posso usala, ai quando ela aparecer no site esse local onde eu coloquei este endereço, ele pode levar a pessoa ao google maps, por exemplo.</P>
+
+    <h1>Marca texto</h1>
+    <!-- se eu colocar assim  "<mark style=""> eu vou poder escolher a cor que o marca texto vai aparecer, isso é usado em coisas pontuais -->
+    <h5><mark>("mark", significa marca)</mark></h5>
+    <p> <mark>Exemplo de da tag MARK, </mark>ela dá esse efeito de marcador de texto</p>
+    <p></p>
+
+    <h1>small</h1>
+    <h5><mark>(significa pequeno)</mark></h5>
+    <p><small>Deixa o texto bem pequeno</small></p>
+    <p></p>
+
+    <h1>Texto deletado / Texto insirido</h1>
+    <p>Este texpo pode até ser lido,<del>mas ele pode ser desconsiderado pelo leitor</del></p>
+    <p>Já este ele entra <ins>para dá destaque nas palavras</ins> antes utlizavam a tag "U", que já é considerada uma tag morta. </p>
+    <p><u>Tem também a tag u, quefaz a mesma coisa, mas ela não tem sentido apensa forma</u></p>
+
+    <h1>trechos de um código</h1>
+    <h5><mark>(tag "code" e "pre", para colar um código em web)</mark>></h5>
+    <p><pre><code>
+        print('hello world')
+    </code></pre></p>
+    <p>Se não tivesse essas tags o code e pre, as letras não teriam esse espaçamento ou essa fonte, quando um código é colocado em uma pagina web sem essas tags ele fiica assim:
+        <p>print("hello world")</p>
+    </p>
+
+    <h1>Citações</h1>
+    <h5><mark>(tag "q", do inglês "quote", que significa citar)</mark>></h5>
+    <p><q>Isso é um exemplo de uma citação.</q></p>
+
+
+<h1>Bloco de citações e com link</h1>
+<h5>
+    <mark>("blockquote", posso colocar um link de algo e embaixo dele colocar citações.)</mark>
+</h5>
+
+    <p><blockquote cite="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/08%20-%20Formata%C3%A7%C3%A3o%20de%20Textos.pdf">Com certeza eu fiz algo errado, a cima temos um link do GIT HUB do Guanabara, local de onde eu estou tirando estas informações.</blockquote>
+    </p>
+
+    <h1>Abreviação</h1>
+    <h5><mark>("abbr" ela abrivia um nome, no site quando eu passo o mouse em cima do nome abreviado, ela me mostra oque aquela abreviação significa)</mark></h5>
+    <p><abbr title="hyper text markup">HTML</abbr> para criar sites.</p>
+
+    <h1>Texto invertido</h1>
+    <p><bdo dir="rtl ou lrt">isso é apenas um teste</bdo></p>
+
+
+    <h1>Testo sobrescrito / Texto subescrito</h1>
+    <h5><mark>(isso aqui é mais utilizado em textos matemáticos ou químicos)</mark></h5>
+    <p>Sob - Para inserir coisas tipo x<sup>2</sup></p>
+
+    <p>Sub - Mesma coisa só que embaixo H<sub>2</sub>O</p>
+</body>
+</html>

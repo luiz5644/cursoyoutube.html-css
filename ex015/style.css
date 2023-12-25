@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* regra potuação */
+
+body{
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1{
+    color: blue;
+    background-color: brown;
+}
+
+h2{
+    color: blueviolet;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}

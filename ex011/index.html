@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em html</title>
+</head>
+<body>
+    <h1>imagem dinânmica</h1>
+    <p>o objetivo aqui é abrir uma imagem em tamanhos diferentes, como se a imagem fosse aberta em um celular, tablet ou pc</p>
+    <!-- imagens, medidas das imagens:
+    p=300x300
+    m=700x700
+    g=1000x1000 -->
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/imgpequena.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagem/imgmedia.png" type="image/png">
+
+        <!--usando o "max-width" você tem que colocar a medida max da maior imagem. começa colocando a maior imagem com <img> mesmo e depois "uma em cima da outra" vc coloca a tag <source media type=> coloca a imagem media e depois a pequena. -->
+
+        <img src="imagem/imggrande.png" alt="imagem flexível">
+    </picture>
+
+    <h1>reproduzindo áudio</h1>
+    <!-- aqui é a forma mais fácil, mas ela pode não rodar em alguns navegadores, 
+    audio srt - para selecionar o seu aúdio
+    controls - controle da música: tempo, volume, pause e play
+    autoplay - ele meio que vai tocar de forma automática -->
+    <audio src="midia/duzz - sorrymom.mp3" controls autoplay></audio>
+
+    <p>basicamente é isso, mas tem outra forma</p>
+    <!-- essa forma aqui já assegura que ele vai tocar, aqui tem o:
+    preload - que divide em três formas de como o áudio vai carregar
+    loop - fica tocando em loop
+    source srt - aqui é onde o áudio fica mais espicificádo, coloco o áudio e o "type" como é um mp3 o fim fica "/mpeg" -->
+    <audio preload="metadata" autoplay controls loop>
+    <source src="midia/duzz - sorrymom.mp3" type="audio/mpeg">
+    </audio>
+    
+</body>
+</html>

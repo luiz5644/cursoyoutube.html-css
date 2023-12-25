@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhndo com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+
+    <p><a href="https://github.com/luiz5644" 
+    target="_blank" 
+    hreflang="en">repositório público Git Hub</a></p>
+    <!-- tag "a"- sempre ela é aberta quando eu vou colocar um link em uma página, com ela vem "target" e "_blank"         - essa me permite abrir um link em uma nova página, fora _blank tem também:
+    _self - self vai abrir o link na janela ou frame atual.
+    _top - vai desfazer todos os frames e abrir o destino no navegador completo
+    _parent - similar ao uso do _top em uma referência à janela mãe
+        
+    
+    "hreflang" - nala eu posso informar qual é o idioma principal do site que vai ser aberto. 
+    mesmo com todas essas opções foque mais na _blank(abre uma nova janela) e _self(continua na mesma janela)-->
+    <h2>usando links internos</h2>
+    <p>está é a minha primeira página, e está é aminha segunda página <a href="pag02.html" target="_self" rel="next">minha segunda página</a>
+    </p>
+    <p>você também pode acessar a nossa <a href="noticias/pag003.html">página de notícias</a></p>
+    <h1>links para dowload</h1>
+    <ul>
+        <li><a href="livro/livro introdução.py.pdf"download="livro/livro introdução.py" type="application/pdf">livro "introdução a python" pdf</a></li>
+
+
+
+    </ul>
+    
+    
+</body>
+</html>
